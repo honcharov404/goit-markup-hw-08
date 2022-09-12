@@ -1,22 +1,32 @@
 body {
-    font-family: Roboto, sans-serif;
-    letter-spacing: 0.03em;
-    font-size: 14px;
-    line-height: 1.71;
-    background-color: var(--primary-white-color);
-    color: var(--primary-text-color);
-}
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    /* outline: 2px solid tomato; */
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
 }
 
 .section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  //   outline: 2px solid tomato;
+}
+
+@media screen and(min-width: $desktop) {
+  .section {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
 }

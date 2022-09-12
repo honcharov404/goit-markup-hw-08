@@ -1,10 +1,13 @@
 :root {
-    --primary-text-color: #757575;
-    --title-text-color: #212121;
-    --accent-color: #2196f3;
-    --primary-white-color: #ffffff;
-    --secondaru-bg-color: #f5f4fa;
-    --social-link-color: #afb1b8;
-    --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondaru-bg-color: #f5f4fa;
+  --social-link-color: #afb1b8;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+$mobile: 479.98px;
+$tablet: 767.98px;
+$desktop: 1199.98px;
