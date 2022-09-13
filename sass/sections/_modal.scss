@@ -25,8 +25,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
+  max-width: 450px;
+  max-height: 609px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -181,8 +181,11 @@
 }
 
 .modal-chekbox-icon {
-  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  margin-right: 5px;
   border: 2px solid var(--title-text-color);
+  border-radius: 4px;
   fill: transparent;
 }
 
@@ -196,13 +199,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--primary-text-color);
 }
 
 .modal-chekbox-link {
   margin-left: 5px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--accent-color);
   text-decoration: underline;
 }
@@ -230,5 +235,33 @@
   &:hover,
   &:focus {
     background-color: #188ce8;
+  }
+}
+
+@media screen and(min-width: $mobile) {
+  .modal {
+    max-width: 100%;
+    max-height: 100%;
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and(min-width: $desktop) {
+  .modal {
+    max-width: 100%;
+    max-height: 100%;
+    width: 528px;
+    height: 581px;
+  }
+
+  .modal-chekbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  .modal-chekbox-link {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }

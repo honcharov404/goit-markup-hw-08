@@ -79,7 +79,7 @@ body {
   }
 }
 .logo {
-  margin-right: 93px;
+  margin-right: 88px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -101,6 +101,7 @@ body {
 
 @media screen and (min-width: 1199.98px) {
   .logo {
+    margin-right: 93px;
     font-size: 26px;
     line-height: 1.19;
   }
@@ -121,6 +122,7 @@ body {
 
 .nav__list {
   display: flex;
+  margin-right: 90px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -163,17 +165,17 @@ body {
 .header__contacts {
   display: flex;
   margin-left: auto;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .contacts__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
 }
 
 .contacts__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -190,6 +192,24 @@ body {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .header__wrap {
+    display: none;
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .nav__list {
+    margin-right: 0;
+  }
+  .contacts__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 .hero {
   margin-left: auto;
   margin-right: auto;
@@ -706,13 +726,13 @@ body {
 
 /* Filter */
 .portfolio-filter-wrap {
-  margin-bottom: 50px;
-  text-align: center;
+  margin-bottom: 40px;
 }
 
 .filter-list {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -742,6 +762,7 @@ body {
 /* Portfolio */
 .portfolio-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -756,8 +777,8 @@ body {
 
 .portfolio-overlay {
   position: relative;
-  width: 370px;
-  height: 294px;
+  max-width: 370px;
+  max-height: 294px;
   overflow: hidden;
 }
 
@@ -813,6 +834,62 @@ body {
   color: var(--primary-text-color);
 }
 
+@media screen and (min-width: 479.98px) and (max-width: 767.98px) {
+  .filter-list {
+    max-width: 356px;
+  }
+  .portfolio__img {
+    width: 450px;
+  }
+  .portfolio-overlay {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
+  .portfolio-filter-wrap {
+    margin-bottom: 30px;
+  }
+  .filter-list {
+    justify-content: center;
+    max-width: 100%;
+  }
+  .portfolio-list {
+    justify-content: flex-start;
+  }
+  .portfolio-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .portfolio__img {
+    width: 354px;
+  }
+  .portfolio-overlay {
+    width: 354px;
+  }
+  .portfolio-item-inner {
+    flex-grow: 1;
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .portfolio-filter-wrap {
+    margin-bottom: 50px;
+  }
+  .filter-list {
+    justify-content: center;
+    max-width: 100%;
+  }
+  .portfolio__img {
+    width: 370px;
+  }
+  .portfolio-overlay {
+    width: 370px;
+  }
+  .portfolio-item-inner {
+    max-width: 370px;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -840,8 +917,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
+  max-width: 450px;
+  max-height: 609px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -998,8 +1075,11 @@ body {
 }
 
 .modal-chekbox-icon {
-  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  margin-right: 5px;
   border: 2px solid var(--title-text-color);
+  border-radius: 4px;
   fill: transparent;
 }
 
@@ -1013,13 +1093,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--primary-text-color);
 }
 
 .modal-chekbox-link {
   margin-left: 5px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--accent-color);
   text-decoration: underline;
 }
@@ -1046,4 +1128,29 @@ body {
 }
 .modal-form-btn:hover, .modal-form-btn:focus {
   background-color: #188ce8;
+}
+
+@media screen and (min-width: 479.98px) {
+  .modal {
+    max-width: 100%;
+    max-height: 100%;
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .modal {
+    max-width: 100%;
+    max-height: 100%;
+    width: 528px;
+    height: 581px;
+  }
+  .modal-chekbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .modal-chekbox-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }/*# sourceMappingURL=main.css.map */

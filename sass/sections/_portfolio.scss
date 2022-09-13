@@ -5,13 +5,13 @@
 /* Filter */
 
 .portfolio-filter-wrap {
-  margin-bottom: 50px;
-  text-align: center;
+  margin-bottom: 40px;
 }
 
 .filter-list {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -48,6 +48,7 @@
 
 .portfolio-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -64,8 +65,8 @@
 
 .portfolio-overlay {
   position: relative;
-  width: 370px;
-  height: 294px;
+  max-width: 370px;
+  max-height: 294px;
 
   overflow: hidden;
 }
@@ -124,4 +125,75 @@
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
+}
+
+@media screen and(min-width: $mobile) and(max-width: $tablet) {
+  .filter-list {
+    max-width: 356px;
+  }
+
+  .portfolio__img {
+    width: 450px;
+  }
+
+  .portfolio-overlay {
+    max-width: 450px;
+  }
+}
+
+@media screen and(min-width: $tablet) and(max-width: $desktop) {
+  .portfolio-filter-wrap {
+    margin-bottom: 30px;
+  }
+
+  .filter-list {
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .portfolio-list {
+    justify-content: flex-start;
+  }
+
+  .portfolio-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .portfolio__img {
+    width: 354px;
+  }
+
+  .portfolio-overlay {
+    width: 354px;
+  }
+
+  .portfolio-item-inner {
+    flex-grow: 1;
+    max-width: 354px;
+  }
+}
+
+@media screen and(min-width: $desktop) {
+  .portfolio-filter-wrap {
+    margin-bottom: 50px;
+  }
+
+  .filter-list {
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .portfolio__img {
+    width: 370px;
+  }
+
+  .portfolio-overlay {
+    width: 370px;
+  }
+
+  .portfolio-item-inner {
+    max-width: 370px;
+  }
 }
