@@ -194,19 +194,52 @@
           <ul class="examples__list list">
             <li>
               <div class="examples__thumb">
-                <img src="./images/layout.jpg" alt="Верстка" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/examples/desk-layout.jpg    1x,
+                      ./images/examples/desk-layout@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/layout.jpg" alt="Верстка" width="370" />
+                </picture>
+
                 <p class="examples__text">Десктопні додатки</p>
               </div>
             </li>
             <li>
               <div class="examples__thumb">
-                <img src="./images/design.jpg" alt="Дизайн" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/examples/desk-design.jpg    1x,
+                      ./images/examples/desk-design@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/design.jpg" alt="Дизайн" width="370" />
+                </picture>
+
                 <p class="examples__text">Мобільні додатки</p>
               </div>
             </li>
             <li>
               <div class="examples__thumb">
-                <img src="./images/styles.jpg" alt="Стилізація" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/examples/desk-styles.jpg    1x,
+                      ./images/examples/desk-styles@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/styles.jpg" alt="Стилізація" width="370" />
+                </picture>
+
                 <p class="examples__text">Дизайнерські рішення</p>
               </div>
             </li>
