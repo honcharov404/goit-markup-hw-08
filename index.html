@@ -19,6 +19,75 @@
   </head>
   <body>
     <header class="header">
+      <div class="header-mobile__wrap">
+        <a class="logo" href="./index.html" lang="en"><span>Web</span>Studio</a>
+        <button class="header-mobile__btn js-open-menu" type="button">
+          <svg class="header-mobile__btn" width="25" height="25">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
+        <div class="header__mobile mobile container js-menu-container">
+          <button class="mobile__btn-close js-close-menu" type="button">
+            <svg class="mobile__close" width="19" height="19">
+              <use href="./images/icons.svg#burger-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile__list list">
+            <li class="mobile__item">
+              <a class="mobile__link link current-mobile" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__link link" href="">Контакти</a>
+            </li>
+          </ul>
+          <div class="mobile__wrap">
+            <a class="mobile__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="mobile__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <ul class="mobile__social-mobile social-mobile list">
+              <li class="social-mobile__item">
+                <a
+                  class="social-mobile__link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="social-mobile__item">
+                <a
+                  class="social-mobile__link"
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li class="social-mobile__item">
+                <a
+                  class="social-mobile__link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li class="social-mobile__item">
+                <a
+                  class="social-mobile__link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div class="header__wrap container">
         <nav class="header__nav nav">
           <a class="logo" href="./index.html" lang="en"><span>Web</span>Studio</a>
@@ -643,6 +712,7 @@
       </div>
     </div>
 
+    <script src="./js/mobile_menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
