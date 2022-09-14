@@ -883,8 +883,16 @@ body.scroll-lock {
   .footer-social-wrap {
     margin-right: 93px;
   }
+  .footer-form-wrap {
+    width: 570px;
+  }
   .footer-form {
     flex-direction: row;
+    flex-wrap: nowrap;
+    width: 570px;
+  }
+  .footer-form-inner {
+    width: 570px;
   }
   .footer-input {
     margin-right: 12px;
